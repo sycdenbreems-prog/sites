@@ -497,10 +497,10 @@ const emptyState = document.getElementById("emptyState");
 
 let selectedFilters = [];
 
-if (!Array.isArray(SITES)) {
+if (typeof SITES === "undefined" || !Array.isArray(SITES)) {
   throw new Error("SITES ontbreekt of is geen array. Controleer sites.js.");
 }
-if (!Array.isArray(FILTERS)) {
+if (typeof FILTERS === "undefined" || !Array.isArray(FILTERS)) {
   throw new Error("FILTERS ontbreekt of is geen array. Controleer sites.js.");
 }
 
@@ -557,22 +557,19 @@ function createFilters() {
 }
 
 
+/* FILTEREN
+   Doorzoekt categorie én tags, negeert hoofdletters en spaties.
+   Een project moet ALLE aangevinkte filters hebben (EN), ook binnen één groep. */
+function normalize(value) {
+  return String(value).trim().toLowerCase();
+}
+
 function matchesFilters(site) {
-  return FILTERS.every(group => {
-    const selectedInGroup = selectedFilters.filter(
-      filter => filter.group === group.name
-    );
+  const siteValues = [site.category, ...(site.tags || [])].map(normalize);
 
-    if (selectedInGroup.length === 0) return true;
-
-    return selectedInGroup.some(filter => {
-      if (group.name === "Soort") {
-        return site.category === filter.value;
-      }
-
-      return site.tags.includes(filter.value);
-    });
-  });
+  return selectedFilters.every(filter =>
+    siteValues.includes(normalize(filter.value))
+  );
 }
 
 
@@ -669,7 +666,7 @@ function createProjectCard(site) {
 
   const tags = document.createElement("div");
   tags.className = "project-tags";
-  site.tags.forEach(tag => {
+  (site.tags || []).forEach(tag => {
     const t = document.createElement("span");
     t.className = "project-tag";
     t.textContent = tag;
@@ -702,10 +699,10 @@ function createProjectCard(site) {
 }
 
 function renderProjects() {
-  const search = searchInput.value.toLowerCase();
+  const search = searchInput.value.trim().toLowerCase();
 
   let results = SITES.filter(site => {
-    const text = [site.name, site.description, site.category, ...site.tags].join(" ").toLowerCase();
+    const text = [site.name, site.description, site.category, ...(site.tags || [])].join(" ").toLowerCase();
     return text.includes(search) && matchesFilters(site);
   });
 
