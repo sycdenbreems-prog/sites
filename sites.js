@@ -18,6 +18,20 @@ const SITES = [
       "Werk", "Zakelijk",
       "Responsive", "Mobiel", "Desktop", "Online", "Offline"
     ]
+  },
+   
+  {
+    name: "Wie is de mol?",
+    category: "Game",
+    description: "Een familiespel met woorden omschrijven/uitbeelden met een mol die alles saboteert.",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/wie-is-de-mol/",
+    tags: [
+      "PWA", "Game",
+      "Speels", "Modern",
+      "Spellen", "Vermaak",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
   }
 ];
 
@@ -39,6 +53,6 @@ const FILTERS = [
   },
   {
     name: "Eigenschappen",
-    options: ["Responsive", "Zelf doen", "Mobiel", "Desktop", "Online", "Offline"]
+    options: ["Responsive", "Mobiel", "Desktop", "Online", "Offline"]
   }
 ];
