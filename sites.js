@@ -1,13 +1,24 @@
+/* PROJECTEN
+   Regels:
+   - category moet een van de "Soort"-opties zijn (Website, PWA, Game, Tool, Dashboard, Software)
+   - tags mogen alle filteropties bevatten (Gevoel, Onderwerp, Eigenschappen, ook extra Soort-opties)
+   - hoofdletters maken niet uit, de spelling wel
+   - url leeg laten geeft de melding "Kan geen URL laden" */
+
 const SITES = [
   {
     name: "Takenlijst",
     category: "Tool",
     description: "Een overzichtelijke takenlijst om je taken en werkzaamheden te beheren.",
-    logo: "logos/nova-dashboard.png",
     thumbnail: "",
     url: "https://sycdenbreems-prog.github.io/takenlijst-app-v1.0/",
-    tags: ["Professioneel", "Desktop", "Online", "Responsive", "Mobiel", "Offline", "PWA", "Tool", "Dashboard", "Werk"]
-  },
+    tags: [
+      "PWA", "Dashboard",
+      "Modern", "Professioneel",
+      "Werk", "Zakelijk",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
+  }
 ];
 
 
