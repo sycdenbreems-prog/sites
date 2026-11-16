@@ -556,14 +556,25 @@ function createFilters() {
   });
 }
 
+
 function matchesFilters(site) {
-  return selectedFilters.every(filter => {
-    if (filter.group === "Soort") {
-      return site.category === filter.value;
-    }
-    return site.tags.includes(filter.value);
+  return FILTERS.every(group => {
+    const selectedInGroup = selectedFilters.filter(
+      filter => filter.group === group.name
+    );
+
+    if (selectedInGroup.length === 0) return true;
+
+    return selectedInGroup.some(filter => {
+      if (group.name === "Soort") {
+        return site.category === filter.value;
+      }
+
+      return site.tags.includes(filter.value);
+    });
   });
 }
+
 
 /* PROJECT OPENEN MET FOUTMELDING */
 
