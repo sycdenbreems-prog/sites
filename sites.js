@@ -46,7 +46,21 @@ const SITES = [
       "Spellen", "Vermaak",
       "Desktop", "Online"
     ]
-  }   
+  },   
+
+  {
+    name: "30 Seconds",
+    category: "Game",
+    description: "Een gezinsspel vanaf 4 spelers. Verdien punten door woorden te raden.",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/30seconds/",
+    tags: [
+      "PWA", "Game",
+      "Modern", "Speels",
+      "Spellen", "Vermaak",
+      "Responsive", "Desktop", "Mobiel", "Online"
+    ]
+  }     
 ];
 
 
