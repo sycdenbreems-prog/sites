@@ -60,7 +60,7 @@ const SITES = [
       "Spellen", "Vermaak",
       "Responsive", "Desktop", "Mobiel", "Online"
     ]
-  }     
+  },     
 
   {
     name: "Afvinken",
@@ -74,7 +74,7 @@ const SITES = [
       "Werk", "Zakelijk",
       "Responsive", "Mobiel", "Desktop", "Online", "Offline"
     ]
-  },   
+  }  
 ];
 
 
