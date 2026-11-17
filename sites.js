@@ -13,7 +13,7 @@ const SITES = [
     thumbnail: "",
     url: "https://sycdenbreems-prog.github.io/takenlijst-app-v1.0/",
     tags: [
-      "PWA", "Dashboard",
+      "PWA", "Dashboard", "Tool",
       "Modern", "Professioneel",
       "Werk", "Zakelijk",
       "Responsive", "Mobiel", "Desktop", "Online", "Offline"
@@ -61,6 +61,20 @@ const SITES = [
       "Responsive", "Desktop", "Mobiel", "Online"
     ]
   }     
+
+  {
+    name: "Afvinken",
+    category: "Tool",
+    description: "Een afvink app om snel dingen te noteren en af te vinken.",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/vink-app/",
+    tags: [
+      "PWA", "Dashboard", "Tool",
+      "Modern", "Professioneel",
+      "Werk", "Zakelijk",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
+  },   
 ];
 
 
