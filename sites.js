@@ -32,7 +32,21 @@ const SITES = [
       "Spellen", "Vermaak",
       "Responsive", "Mobiel", "Desktop", "Online", "Offline"
     ]
-  }
+  },
+
+  {
+    name: "Apex Race Simulator",
+    category: "Game",
+    description: "Een 3d racesimulator om over een realistische racebaan te racen.",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/wie-is-de-mol/",
+    tags: [
+      "PWA", "Game",
+      "Speels", "Modern",
+      "Spellen", "Vermaak",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
+  }   
 ];
 
 
