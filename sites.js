@@ -42,7 +42,7 @@ const SITES = [
     url: "https://sycdenbreems-prog.github.io/apex-race/",
     tags: [
       "Website", "Game",
-      "Modern", "Technisch",
+      "Modern", "Technisch", "Professioneel",
       "Spellen", "Vermaak",
       "Desktop", "Online"
     ]
