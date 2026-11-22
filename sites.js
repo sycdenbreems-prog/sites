@@ -116,7 +116,21 @@ const SITES = [
       "Spellen", "Vermaak",
       "Responsive", "Mobiel", "Desktop", "Online", "Offline"
     ]
-  }  
+  },
+
+  {
+    name: "PacMan",
+    category: "Game",
+    description: "Een oneindige versie van PacMan",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/8bitpac/",
+    tags: [
+      "PWA", "Game",
+      "Speels", "Minimalistisch",
+      "Spellen", "Vermaak",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
+  }     
 ];
 
 
