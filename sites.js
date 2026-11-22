@@ -74,6 +74,48 @@ const SITES = [
       "Werk", "Zakelijk",
       "Responsive", "Mobiel", "Desktop", "Online", "Offline"
     ]
+  },
+
+  {
+    name: "Highway drive",
+    category: "Game",
+    description: "Een klassieke racegame voor in de auto.",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/8bitrace/",
+    tags: [
+      "PWA", "Game",
+      "Speels", "Minimalistisch",
+      "Spellen", "Vermaak",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
+  },   
+
+  {
+    name: "Flappy plane",
+    category: "Game",
+    description: "Een aangepaste versie van Flappy Bird. Ideaal voor in de auto.",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/8bitflappy/",
+    tags: [
+      "PWA", "Game",
+      "Speels", "Minimalistisch",
+      "Spellen", "Vermaak",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
+  },  
+
+  {
+    name: "Tower Stacker",
+    category: "Game",
+    description: "Een oud klassiek spel voor in de auto",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/8bitstack/",
+    tags: [
+      "PWA", "Game",
+      "Speels", "Minimalistisch",
+      "Spellen", "Vermaak",
+      "Responsive", "Mobiel", "Desktop", "Online", "Offline"
+    ]
   }  
 ];
 
