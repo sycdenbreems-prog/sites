@@ -130,7 +130,21 @@ const SITES = [
       "Spellen", "Vermaak",
       "Responsive", "Mobiel", "Desktop", "Online", "Offline"
     ]
-  }     
+  },
+
+  {
+    name: "Veray Filmstudio",
+    category: "Dashboard",
+    description: "Een programma om filmpjes te maken en te exporteren",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/veray/",
+    tags: [
+      "Website", "Tool", "Dashboard",
+      "Modern", "Technisch", "Professioneel",
+      "Werk", "Zakelijk",
+      "Desktop", "Online"
+    ]
+  }
 ];
 
 
