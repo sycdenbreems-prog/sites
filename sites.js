@@ -134,17 +134,31 @@ const SITES = [
 
   {
     name: "Veray Filmstudio",
-    category: "Dashboard",
+    category: "Software",
     description: "Een programma om filmpjes te maken en te exporteren",
     thumbnail: "",
     url: "https://sycdenbreems-prog.github.io/veray/",
     tags: [
-      "Website", "Tool", "Dashboard",
+      "Website", "Tool", "Software",
       "Modern", "Technisch", "Professioneel",
       "Werk", "Zakelijk",
       "Desktop", "Online"
     ]
-  }
+  },
+
+  {
+    name: "Block Studio",
+    category: "Software",
+    description: "Een programma om 3d texturepacks voor Minecraft te ontwerpen en te exporteren",
+    thumbnail: "",
+    url: "https://sycdenbreems-prog.github.io/texturepackmaker/",
+    tags: [
+      "Website", "Tool", "Software",
+      "Modern", "Technisch", "Professioneel",
+      "Spellen", "Vermaak",
+      "Desktop", "Online"
+    ]
+  }   
 ];
 
 
